@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    width: 1120px;
+    margin: 69px auto 0;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 121px;
+} 
+
+.logo-part1,
+.logo-part2 {
+    width: 20px;
+    border-radius: 20px;
+}
+
+.logo-part1 {
+    margin-right: 9px;
+    height: 20px;
+    background-color: #9C69E2;
+}
+
+.logo-part2 {
+    height: 35px;
+    background-color: #f063b8
+}
+
+.header-navigation-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 358px;
+}
+
+.header-navigation {
+    display: flex;    
+}
+
+.header-navigation-item {
+    margin-right: 40px;
+}
+
+.header-navigation-link {
+    font-family: Avenir;
+    font-size: 16px;
+    line-height: 160%;
+    color: #212353;
+    text-decoration: none;
+}
+
+.header-navigation-item:first-child .header-navigation-link {
+    font-weight: 800;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.request-demo-button {
+    position: relative;
+    width: 210px;
+    height: 60px;
+    outline: none;
+    border: none;
+    padding: 17px 70px 17px 29px;
+    font-family: Avenir;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+}
+
+.request-demo-button::after {
+    position: absolute;
+    content: url('./assets/arrow.png');
+    right: 40px;
+} 
+
