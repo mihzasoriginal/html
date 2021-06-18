@@ -1,7 +1,11 @@
-.header {
-    display: flex;
+.wrapper {
     width: 1120px;
     margin: 69px auto 0;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 71px;
 }
 
 .logo-wrapper {
@@ -42,7 +46,7 @@
 }
 
 .header-navigation-link {
-    font-family: Avenir;
+    font-family: Avenir sans-serif;
     font-size: 16px;
     line-height: 160%;
     color: #212353;
@@ -65,7 +69,7 @@
     outline: none;
     border: none;
     padding: 17px 70px 17px 29px;
-    font-family: Avenir;
+    font-family: Avenir sans-serif;
     background-color: #fff;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     border-radius: 50px;
@@ -76,4 +80,58 @@
     content: url('./assets/arrow.png');
     right: 40px;
 } 
+
+.slide-item {
+    background: url("./assets/building.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 560px;
+    border-radius: 50px;
+    padding-top: 80px;
+}
+
+.slide-heading {
+    width: 645px;
+    margin-left: 104px;
+    margin-bottom: 18px;
+    font-family: Avenir sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 79px;
+    color: #212353;
+}
+
+.slide-description {
+    width: 380px;
+    margin-left: 104px;
+    color: #4B5D68;
+    font-size: 18px;
+    font-family: Avenir sans-serif;
+    line-height: 28px;
+}
+
+.slide-button {
+    height: 60px;
+    width: 170px;
+    margin-top: 18px;
+    margin-left: 104px;
+    padding: 16px 37px;
+    background: #9C69E2;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.features-heading {
+    text-align: center;
+    width: 405px;
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.features-description {
+    width: 504px;
+    font-size: 18px;
+    margin: 1em auto; 
+}
 
