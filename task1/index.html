@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
 </head>
 <body>
@@ -23,31 +24,67 @@
                     <li class="header-navigation-item"><a href="#" class="header-navigation-link">Features</a></li>
                     <li class="header-navigation-item"><a href="#" class="header-navigation-link">Signup</a></li>
                 </ul>
-                <img src="./assets/search-icon.png" alt="search-icon" class="search-icon">
+                <img src="./assets/loop.svg" alt="search-icon" class="search-icon">
             </nav>
             <button class="request-demo-button">Request Demo</button>
         </header>
-        <section class="slider">
-            <div class="slide-item">
-                <div class="slide-heading">
-                    Save your data storage here.
+        <main class="main">
+            <section class="slider splide">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="slide-item splide__slide">
+                            <div class="slide-item-wrapper">
+                                <div class="slide-heading">
+                                    Save your data storage here.
+                                </div>
+                                <div class="slide-description">
+                                    Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.
+                                </div>
+                                <button class="slide-button">
+                                    Learn more
+                                </button>
+                            </div>
+                        </div>
+                        <div class="slide-item splide__slide">
+                            <div class="slide-item-wrapper">
+                                <div class="slide-heading">
+                                    Save your data storage here.
+                                </div>
+                                <div class="slide-description">
+                                    Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.
+                                </div>
+                                <button class="slide-button">
+                                    Learn more
+                                </button>
+                            </div>
+                        </div>
+                        <div class="slide-item splide__slide">
+                            <div class="slide-item-wrapper">
+                                <div class="slide-heading">
+                                    Save your data storage here.
+                                </div>
+                                <div class="slide-description">
+                                    Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.
+                                </div>
+                                <button class="slide-button">
+                                    Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="slide-description">
-                    Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.
+            </section>
+            <section class="features">
+                <h1 class="features-heading">
+                    Features
+                </h1>
+                <div class="features-description">
+                    Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.
                 </div>
-                <button class="slide-button">
-                    Learn more
-                </button>
-            </div>
-        </section>
-        <section class="features">
-            <h1 class="features-heading">
-                Features
-            </h1>
-            <div class="features-description">
-                Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.
-            </div>
-        </section>
+            </section>
+        </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="./js/initSlider.js"></script>
 </body>
 </html>
