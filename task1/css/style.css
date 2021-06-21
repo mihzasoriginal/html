@@ -53,6 +53,12 @@
     text-decoration: none;
 }
 
+.header-navigation-link:hover {
+    cursor: pointer;
+    transition: 0.1s font-weight;
+    font-weight: 800;
+}
+
 .header-navigation-item:first-child .header-navigation-link {
     font-weight: 800;
 }
@@ -127,6 +133,11 @@
     border: none;
     outline: none;
     color: #fff;
+}
+
+.slide-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .splide__arrow {
@@ -204,6 +215,12 @@
     top: 4px;
     right: -35px;
 }
+
+.features-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 
 .features-bg-block {
     position: absolute;
