@@ -1,3 +1,11 @@
+.line {
+    position: absolute;
+    bottom: -1000px;
+    border: 1px solid #9C69E2;
+    width: calc(100vw - 15px);
+    height: 2px;
+}
+
 .wrapper {
     width: 1120px;
     margin: 69px auto 0;
@@ -271,5 +279,113 @@
     bottom: 12px;
 }
 
+.try {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 231px;
+}
 
+.try-heading {
+    font-weight: 800;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
 
+.try-description {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 153px;
+}
+
+.logo-line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.footer-logo-wrapper {
+    margin-right: 20px;
+}
+
+.logo-name {
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.logo-address {
+    margin-bottom: 10px;
+    line-height: 29px;
+    font-family: sans-serif;
+}
+
+.logo-email {
+    line-height: 29px;
+    font-family: sans-serif;
+}
+
+.column-heading {
+    font-weight: 800;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+.about-menu,
+.help-menu {
+    list-style: none;
+}
+
+.about-menu-item,
+.help-menu-item {
+    padding: 10px 0;
+}
+
+.about-menu-link,
+.help-menu-link {
+    text-decoration: none;
+    color: #212353;
+    font-family: sans-serif;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 14px;
+    background: #212353;
+    opacity: 0.15;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.facebook {
+    background-image: url('../assets/facebook.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.twitter {
+    background-image: url('../assets/twitter.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.instagram {
+    background-image: url('../assets/instagram.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
