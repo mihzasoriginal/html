@@ -153,7 +153,105 @@
     font-family: sans-serif;
     width: 504px;
     font-size: 18px;
-    margin: 1em auto; 
+    margin: 26px auto 38px; 
+}
+
+.features-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 83px;
+}
+
+.features-wrapper .features-block{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin-right: 50px;
+    height: 358px;
+}
+
+.features-image {
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.features-block-heading {
+    font-family: sans-serif;
+    color: #212353;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.features-block-description {
+    font-size: 16px;
+    line-height: 160%;
+    width: 220px;
+    color: #4B5D68;
+    margin-bottom: 20px;
+}
+
+.features-button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+
+.features-button::after {
+    position: absolute;
+    content: url('../assets/arrow.svg');
+    top: 4px;
+    right: -35px;
+}
+
+.features-bg-block {
+    position: absolute;
+    left: 80px;
+    z-index: -1;
+}
+
+.search-data::after {
+    content: url('../assets/search-data-big-elipse.svg');
+    position: absolute;
+    right: 12px;
+    top: 20px;
+}
+
+.search-data::before {
+    content: url('../assets/search-data-small-elipse.svg');
+    position: absolute;
+    right: 120px;
+    top: 44px;
+}
+
+.security-code::after {
+    content: url('../assets/security-code-big-elipse.svg');
+    position: absolute;
+    right: 71px;
+    top: 20px;
+    z-index: -1;
+}
+
+.security-code::before {
+    content: url('../assets/security-code-small-elipse.svg');
+    position: absolute;
+    right: 16px;
+    bottom: 35px;
+}
+
+.print-out::before {
+    content: url('../assets/print-out-small-elipse.svg');
+    position: absolute;
+    right: 16px;
+    top: 23px;
+}
+
+.hours-access::before {
+    content: url('../assets/hours-access-big-elipse.svg');
+    position: absolute;
+    right: 16px;
+    bottom: 12px;
 }
 
 
