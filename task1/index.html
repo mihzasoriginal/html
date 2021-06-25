@@ -11,9 +11,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="line"></div>
-    <div class="wrapper">
-        <header class="header">
+    <header class="header">
+        <div class="wrapper">
             <div class="logo-wrapper">
                 <span class="logo-part1"></span>
                 <span class="logo-part2"></span>
@@ -27,10 +26,12 @@
                 </ul>
                 <img src="./assets/loop.svg" alt="search-icon" class="search-icon">
             </nav>
-            <button class="request-demo-button">Request Demo</button>
-        </header>
-        <main class="main">
-            <section class="slider splide">
+            <button class="request-demo-button modalButton">Request Demo</button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="slider splide">
+            <div class="wrapper">
                 <div class="splide__track">
                     <div class="splide__list">
                         <div class="slide-item splide__slide">
@@ -74,8 +75,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="features">
+            </div>
+        </section>
+        <section class="features">
+            <div class="wrapper feat-wrapper">
                 <h2 class="features-heading">
                     Features
                 </h2>
@@ -144,19 +147,24 @@
                         <img src="./assets/bg-hours-access.svg" alt="bg-print-out" class="features-bg-block" />
                     </div>
                 </div>
-            </section>
-            <section class="try">
+            </div>
+        </section>
+        <section class="try">
+            <div class="line"></div>
+            <div class="wrapper try-wrapper">
                 <div class="try-left-column">
                     <div class="try-heading">Try for free!</div>
                     <div class="try-description">Get limited 1 week free try our features!</div>
                 </div>
                 <div class="try-right-column">
                     <button class="try-learn-more slide-button">Learn more</button>
-                    <button class="try-request-demo request-demo-button">Request demo</button>
+                    <button class="try-request-demo request-demo-button modalButton">Request demo</button>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper footer-wrapper">
             <div class="column-data-ware">
                 <div class="logo-line">
                     <div class="footer-logo-wrapper logo-wrapper">
@@ -203,9 +211,40 @@
                     <div class="instagram icon"></div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
+    <div class="modal">
+        <div class="modal-wrapper">
+            <div class="form-wrapper">
+                <h3 class="modal-heading">Request Demo</h3>
+                <form action="#" class="modal-form">
+                    <div class="modal-left-column">
+                        <div class="modal-form-input">
+                            <label for="name" class="label">Name</label>
+                            <input type="text" id="name" name="name" class="input name">
+                        </div>
+                        <div class="modal-form-input">
+                            <label for="email" class="label">Email</label>
+                            <input type="text" id="email" name="email" class="input email">
+                        </div>
+                        <div class="modal-form-input">
+                            <label for="web" class="label">Web</label>
+                            <input type="text" id="web" name="web" class="input web">
+                        </div>
+                    </div>
+                    <div class="modal-right-column">
+                        <div class="modal-form-input">
+                            <label for="message" class="label">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="textarea"></textarea>
+                        </div>
+                        <button type="submit" class="form-button">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="./js/initSlider.js"></script>
+    <script src="./js/initPopup.js"></script>
 </body>
 </html>
