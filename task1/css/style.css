@@ -95,6 +95,7 @@
     opacity: 0.2;
     width: 100%;
     margin-bottom: 44px;
+    outline: none;
 }
 
 textarea {
@@ -112,7 +113,7 @@ textarea {
 
 .wrapper {
     display: flex;
-    width: 1120px;
+    max-width: 1120px;
     margin: 69px auto 0;
 }
 
@@ -144,13 +145,18 @@ textarea {
     background-color: #f063b8
 }
 
-.header-navigation-wrapper {
+.header-navigation {
     display: flex;
     align-items: center;
     margin-right: 358px;
 }
 
-.header-navigation {
+.header-navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-navigation-menu {
     display: flex;    
 }
 
