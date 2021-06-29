@@ -12,23 +12,26 @@
 </head>
 <body>
     <header class="header">
-        <div class="wrapper header-wrapper">
-            <div class="logo-wrapper">
-                <span class="logo-part1"></span>
-                <span class="logo-part2"></span>
-            </div>
-            <div class="header-navigation-wrapper">
-                <nav class="header-navigation">
-                    <ul class="header-navigation-menu">
-                        <li class="header-navigation-item"><a href="#" class="header-navigation-link">About</a></li>
-                        <li class="header-navigation-item"><a href="#" class="header-navigation-link">Help</a></li>
-                        <li class="header-navigation-item"><a href="#" class="header-navigation-link">Features</a></li>
-                        <li class="header-navigation-item"><a href="#" class="header-navigation-link">Signup</a></li>
-                    </ul>
-                    <img src="./assets/loop.svg" alt="search-icon" class="search-icon">
-                    <div class="burger"></div>
-                </nav>
-                <button class="request-demo-button modalButton">Request Demo</button>
+        <div class="wrapper">
+            <div class="header-wrapper">
+                <div class="logo-wrapper">
+                    <span class="logo-part1"></span>
+                    <span class="logo-part2"></span>
+                </div>
+                <div class="header-navigation-wrapper">
+                    <nav class="header-navigation">
+                        <ul class="header-navigation-menu">
+                            <li class="header-navigation-item"><a href="#" class="header-navigation-link">About</a></li>
+                            <li class="header-navigation-item"><a href="#" class="header-navigation-link">Help</a></li>
+                            <li class="header-navigation-item"><a href="#" class="header-navigation-link">Features</a></li>
+                            <li class="header-navigation-item"><a href="#" class="header-navigation-link">Signup</a></li>
+                        </ul>
+                        <img src="./assets/loop.svg" alt="search-icon" class="search-icon">
+                        <div class="close-burger-button burger-not-active"></div>
+                        <div class="burger"></div>
+                    </nav>
+                    <button class="request-demo-button request-demo-header modalButton">Request Demo</button>
+                </div>
             </div>
         </div>
     </header>
@@ -81,137 +84,147 @@
             </div>
         </section>
         <section class="features">
-            <div class="wrapper feat-wrapper">
-                <h2 class="features-heading">
-                    Features
-                </h2>
-                <div class="features-description">
-                    Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.
-                </div>
-                <div class="features-wrapper">
-                    <div class="search-data features-block">
-                        <img src="./assets/search-data.svg" alt="search-data" class="features-image" />
-                        <div class="features-content-wrapper">
-                            <div class="search-data-heading features-block-heading">
-                                Search Data
-                            </div>
-                            <div class="search-data-description features-block-description">
-                                Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.
-                            </div>
-                            <button class="search-data-button features-button">
-                                Learn more
-                            </button>
-                        </div>
-                        <img src="./assets/bg-search-data.svg" alt="bg-search-data" class="features-bg-block features-bg" />
+            <div class="wrapper">
+                <div class="feat-wrapper">
+                    <h2 class="features-heading">
+                        Features
+                    </h2>
+                    <div class="features-description">
+                        Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.
                     </div>
-                    <div class="security-code features-block">
-                        <img src="./assets/security-code.svg" alt="security-code" class="features-image" />
-                        <div class="security-code-content-wrapper">
-                            <div class="security-code-heading features-block-heading">
-                                Security Code
+                    <div class="features-wrapper">
+                        <div class="search-data features-block">
+                            <picture>
+                                <source srcset="./assets/small-search-data.svg" media="(min-width: 375px) and (max-width: 768px)">
+                                <img src="./assets/search-data.svg" alt="MDN" class="features-image">
+                            </picture>
+                            <!-- <img src="./assets/search-data.svg" alt="search-data" class="features-image" /> -->
+                            <div class="features-content-wrapper">
+                                <div class="search-data-heading features-block-heading">
+                                    Search Data
+                                </div>
+                                <div class="search-data-description features-block-description">
+                                    Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.
+                                </div>
+                                <button class="search-data-button features-button">
+                                    Learn more
+                                </button>
                             </div>
-                            <div class="security-code-description features-block-description">
-                                Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured with a code or password that you created, so only you can open the file.
-                            </div>
-                            <button class="security-code-button features-button">
-                                Learn more
-                            </button>
+                            <img src="./assets/bg-search-data.svg" alt="bg-search-data" class="features-bg-block features-bg" />
                         </div>
-                        <img src="./assets/bg-security-code.svg" alt="bg-security-code" class="features-bg-block features-bg" />
-                    </div>
-                    <div class="print-out features-block">
-                        <img src="./assets/print-out.svg" alt="print-out" class="features-image" />
-                        <div class="print-out-content-wrapper">
-                            <div class="print-out-heading features-block-heading">
-                                Print Out
+                        <div class="security-code features-block">
+                            <img src="./assets/security-code.svg" alt="security-code" class="features-image" />
+                            <div class="security-code-content-wrapper">
+                                <div class="security-code-heading features-block-heading">
+                                    Security Code
+                                </div>
+                                <div class="security-code-description features-block-description">
+                                    Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured with a code or password that you created, so only you can open the file.
+                                </div>
+                                <button class="security-code-button features-button">
+                                    Learn more
+                                </button>
                             </div>
-                            <div class="print-out-description features-block-description">
-                                Print out service gives you convenience if someday you need print data, just edit it all and just print it.
-                            </div>
-                            <button class="print-out-button features-button">
-                                Learn more
-                            </button>
+                            <img src="./assets/bg-security-code.svg" alt="bg-security-code" class="features-bg-block features-bg" />
                         </div>
-                        <img src="./assets/bg-print-out.svg" alt="bg-print-out" class="features-bg-block features-bg" />
-                    </div>
-                    <div class="hours-access features-block">
-                        <img src="./assets/hours-access.svg" alt="hours-access" class="features-image" />
-                        <div class="print-out-content-wrapper">
-                            <div class="hours-access-heading features-block-heading">
-                                24 Hours Access
+                        <div class="print-out features-block">
+                            <img src="./assets/print-out.svg" alt="print-out" class="features-image" />
+                            <div class="print-out-content-wrapper">
+                                <div class="print-out-heading features-block-heading">
+                                    Print Out
+                                </div>
+                                <div class="print-out-description features-block-description">
+                                    Print out service gives you convenience if someday you need print data, just edit it all and just print it.
+                                </div>
+                                <button class="print-out-button features-button">
+                                    Learn more
+                                </button>
                             </div>
-                            <div class="hours-access-description features-block-description">
-                                Access is given 24 hours a full morning to night and meet again in the morning, giving you comfort when you need data when urgent.
-                            </div>
-                            <button class="hours-access-button features-button">
-                                Learn more
-                            </button>
+                            <img src="./assets/bg-print-out.svg" alt="bg-print-out" class="features-bg-block features-bg" />
                         </div>
-                        <img src="./assets/bg-hours-access.svg" alt="bg-print-out" class="features-bg-block features-bg" />
+                        <div class="hours-access features-block">
+                            <img src="./assets/hours-access.svg" alt="hours-access" class="features-image" />
+                            <div class="print-out-content-wrapper">
+                                <div class="hours-access-heading features-block-heading">
+                                    24 Hours Access
+                                </div>
+                                <div class="hours-access-description features-block-description">
+                                    Access is given 24 hours a full morning to night and meet again in the morning, giving you comfort when you need data when urgent.
+                                </div>
+                                <button class="hours-access-button features-button">
+                                    Learn more
+                                </button>
+                            </div>
+                            <img src="./assets/bg-hours-access.svg" alt="bg-print-out" class="features-bg-block features-bg" />
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="try">
             <div class="line"></div>
-            <div class="wrapper try-wrapper">
-                <div class="try-left-column">
-                    <div class="try-heading">Try for free!</div>
-                    <div class="try-description">Get limited 1 week free try our features!</div>
-                </div>
-                <div class="try-right-column">
-                    <button class="try-learn-more slide-button">Learn more</button>
-                    <button class="try-request-demo request-demo-button modalButton">Request demo</button>
+            <div class="wrapper">
+                <div class="try-wrapper">
+                    <div class="try-left-column">
+                        <div class="try-heading">Try for free!</div>
+                        <div class="try-description">Get limited 1 week free try our features!</div>
+                    </div>
+                    <div class="try-right-column">
+                        <button class="try-learn-more slide-button">Learn more</button>
+                        <button class="try-request-demo request-demo-button modalButton">Request demo</button>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="wrapper footer-wrapper">
-            <div class="column-data-ware">
-                <div class="logo-line">
-                    <div class="footer-logo-wrapper logo-wrapper">
-                        <span class="logo-part1"></span>
-                        <span class="logo-part2"></span>
+        <div class="wrapper">
+            <div class="footer-wrapper">
+                <div class="column-data-ware">
+                    <div class="logo-line">
+                        <div class="footer-logo-wrapper logo-wrapper">
+                            <span class="logo-part1"></span>
+                            <span class="logo-part2"></span>
+                        </div>
+                        <div class="logo-name">DataWare</div>
                     </div>
-                    <div class="logo-name">DataWare</div>
+                    <div class="logo-address">
+                        Warehouse Society, 234 <br />Bahagia Ave Street PRBW 29281
+                    </div>
+                    <div class="logo-email">
+                        info@warehouse.project<br /> 1-232-3434 (Main) 
+                    </div>
                 </div>
-                <div class="logo-address">
-                    Warehouse Society, 234 <br />Bahagia Ave Street PRBW 29281
+                <div class="column-about">
+                    <div class="column-heading">About</div>
+                    <nav class="about-menu-wrapper">
+                        <ul class="about-menu">
+                            <li class="about-menu-item"><a href="#" class="about-menu-link">Profile</a></li>
+                            <li class="about-menu-item"><a href="#" class="about-menu-link">Features</a></li>
+                            <li class="about-menu-item"><a href="#" class="about-menu-link">Careers</a></li>
+                            <li class="about-menu-item"><a href="#" class="about-menu-link">DW News</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="logo-email">
-                    info@warehouse.project<br /> 1-232-3434 (Main) 
+                <div class="column-help">
+                    <div class="column-heading">Help</div>
+                    <nav class="help-menu-wrapper">
+                        <ul class="help-menu">
+                            <li class="help-menu-item"><a href="#" class="help-menu-link">Support</a></li>
+                            <li class="help-menu-item"><a href="#" class="help-menu-link">Sign up</a></li>
+                            <li class="help-menu-item"><a href="#" class="help-menu-link">Guide</a></li>
+                            <li class="help-menu-item"><a href="#" class="help-menu-link">Reports</a></li>
+                            <li class="help-menu-item"><a href="#" class="help-menu-link">Q&A</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-            <div class="column-about">
-                <div class="column-heading">About</div>
-                <nav class="about-menu-wrapper">
-                    <ul class="about-menu">
-                        <li class="about-menu-item"><a href="#" class="about-menu-link">Profile</a></li>
-                        <li class="about-menu-item"><a href="#" class="about-menu-link">Features</a></li>
-                        <li class="about-menu-item"><a href="#" class="about-menu-link">Careers</a></li>
-                        <li class="about-menu-item"><a href="#" class="about-menu-link">DW News</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="column-help">
-                <div class="column-heading">Help</div>
-                <nav class="help-menu-wrapper">
-                    <ul class="help-menu">
-                        <li class="help-menu-item"><a href="#" class="help-menu-link">Support</a></li>
-                        <li class="help-menu-item"><a href="#" class="help-menu-link">Sign up</a></li>
-                        <li class="help-menu-item"><a href="#" class="help-menu-link">Guide</a></li>
-                        <li class="help-menu-item"><a href="#" class="help-menu-link">Reports</a></li>
-                        <li class="help-menu-item"><a href="#" class="help-menu-link">Q&A</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="column-social-media">
-                <div class="column-heading">Social Media</div>
-                <div class="social-icons">
-                    <div class="facebook icon"></div>
-                    <div class="twitter icon"></div>
-                    <div class="instagram icon"></div>
+                <div class="column-social-media">
+                    <div class="column-heading">Social Media</div>
+                    <div class="social-icons">
+                        <div class="facebook icon"></div>
+                        <div class="twitter icon"></div>
+                        <div class="instagram icon"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -249,5 +262,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="./js/initSlider.js"></script>
     <script src="./js/initPopup.js"></script>
+    <script src="./js/initBurger.js"></script>
 </body>
 </html>

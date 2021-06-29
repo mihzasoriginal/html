@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if(modalWindow.contains(e.target)){
             e.stopPropagation();
         } else {
-            document.body.style.overflow = 'visible';
+            document.body.classList.remove('hidden');
             modal.classList.toggle('is-active-modal');
         }
     })
@@ -16,5 +16,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function openModal() {
     modal.classList.toggle('is-active-modal');
-    document.body.style.overflow = 'hidden';   
+    document.body.classList.add('hidden');   
 }

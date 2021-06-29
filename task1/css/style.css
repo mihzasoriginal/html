@@ -1,3 +1,7 @@
+.hidden {
+    overflow-y: hidden;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -111,26 +115,37 @@ textarea {
     display: block;
 }
 
-.wrapper {
-    display: flex;
-    max-width: 1120px;
-    margin: 0 auto;
+@media screen and (min-width: 375px) {
+    .wrapper {
+        max-width: 475px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
-@media screen and (min-width: 375px) and (max-width: 800px) {
+@media screen and (min-width: 768px) {
     .wrapper {
-        padding: 20px;
-        width: 100%;
+        max-width: 768px;
     }
+}
 
+@media screen and (min-width: 1160px) {
+    .wrapper {
+        max-width: 1120px;
+    }
+}
+
+@media screen and (min-width: 475px) and (max-width: 800px) {
     .header-wrapper {
+        display: flex;
         justify-content: space-between;
         padding-bottom: 16px;
     }
 }
 
-.header {
-    display: flex;
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .logo-wrapper {
@@ -157,8 +172,7 @@ textarea {
     background-color: #f063b8
 }
 
-
-@media screen and (min-width: 375px) and (max-width: 800px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
     .logo-part1 {
         width: 11px;
         height: 11px;
@@ -172,28 +186,42 @@ textarea {
     }
 }
 
+.header-wrapper {
+    display: flex;
+}
+
 .header-navigation {
     display: flex;
     align-items: center;
-    margin-right: 358px;
 }
 
 .header-navigation-wrapper {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .header-navigation-menu {
     display: flex;    
 }
 
-@media screen and (min-width: 375px) and (max-width: 800px) {
+@media screen and (min-width: 375px) and (max-width: 1160px) {
+    .header-wrapper {
+        padding-top: 24px;
+    }
+
     .header-navigation-menu {
         display: none;
     }
 
     .header-navigation {
         margin-right: 0;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .header-navigation-item {
+        padding: 30px 0;
     }
 }
 
@@ -223,7 +251,7 @@ textarea {
     height: 20px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 800px) {
+@media screen and (min-width: 375px) and (max-width: 1160px){
     .search-icon {
         margin-right: 28px;
     }
@@ -253,15 +281,18 @@ textarea {
     top: 20px;
 } 
 
-@media screen and (min-width: 375px) and (max-width: 800px) {
-    .request-demo-button {
+@media screen and (min-width: 375px) and (max-width: 1160px) {
+    .request-demo-header {
         display: none;
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 800px) {
+.burger-not-active {
+    display: none;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1160px){
     .burger {
-        display: block;
         position: relative;
         border-bottom: 2px solid #9C69E2;
         width: 20px;
@@ -283,6 +314,45 @@ textarea {
     .burger:after {
         top: 7px;
     }
+
+    .close-burger-button {
+        position: relative;
+        width: 20px;
+    }
+
+    .close-burger-button:before,
+    .close-burger-button:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        border-bottom: 2px solid #9C69E2;
+        width: 24px;
+    }
+
+    .close-burger-button:before {
+        top: -1px;
+        transform: rotate(45deg);
+    }
+
+    .close-burger-button:after {
+        top: -1px;
+        transform: rotate(-45deg);
+    }
+}
+
+.burger-menu {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: absolute;
+    top: 41px;
+    z-index: 9999;
+    background: #f063b8;
+    width: 132%;
+}
+
+.nav-burger-menu {
+    position: relative;
 }
 
 .main {
@@ -293,7 +363,7 @@ textarea {
     margin-bottom: 125px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 800px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
     .slider {
         display: none;
     }
@@ -385,10 +455,14 @@ textarea {
 
     .features-heading {
         margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .features-description {
         margin-bottom: 101px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -398,7 +472,13 @@ textarea {
     row-gap: 83px;
 }
 
-.features-block{
+@media screen and (max-width: 1160px) {
+    .features-wrapper {
+        justify-content: center;
+    }
+}
+
+.features-block {
     position: relative;
     display: flex;
     align-items: center;
@@ -407,13 +487,13 @@ textarea {
     height: 358px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 800px) {
+@media screen and (min-width: 375px) and (max-width: 1160px) {
     .feat-wrapper {
         padding-bottom: 48px;
     }
 
     .features-block {
-        width: 100%;
+        width: 335px;
         height: 392px;
         flex-flow: column;
         align-items: flex-start;
@@ -423,15 +503,11 @@ textarea {
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 800px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
     .features-image {
         width: 175px;
-        margin-left: 45px;
-        margin-top: -60px;
-    }
-
-    .features-bg {
-        display: none;
+        margin-top: -76px;
+        margin-left: 40px;
     }
 
     .features-bg::after {
@@ -478,6 +554,12 @@ textarea {
     position: absolute;
     left: 80px;
     z-index: -1;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1160px) {
+    .features-bg-block {
+        display: none;
+    }
 }
 
 .search-data::after {
@@ -535,7 +617,7 @@ textarea {
     height: 2px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 800px) {
+@media screen and (min-width: 375px) and (max-width: 1160px) {
     .try {
         display: none;
     }
@@ -546,8 +628,10 @@ textarea {
 }
 
 .try-wrapper {
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding-top: 231px;
 }
 
@@ -575,7 +659,9 @@ textarea {
 }
 
 .footer-wrapper {
+    display: flex;
     justify-content: space-between;
+    width: 100%;
     padding-top: 153px;
 }
 
@@ -666,6 +752,7 @@ textarea {
 
 @media screen and (min-width: 375px) and (max-width: 800px) {
     .footer-wrapper {
+        display: flex;
         flex-flow: column;
         padding-top: 32px;
     }
